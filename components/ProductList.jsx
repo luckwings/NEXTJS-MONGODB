@@ -22,6 +22,9 @@ const ProductList = () => {
     return (
         <div className="flex flex-col my-10">
             <div className="w-full">
+                <div className='text-[48px] font-bold flex mb-16'>
+                    <div className='m-auto'>Next.js + Prisma + MySQL</div>
+                </div>
                 <Link href="/add" className="ml-4 sm:ml-0">
                     <button
                         type="button"
@@ -34,7 +37,7 @@ const ProductList = () => {
                         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-b">
                             <tr>
                                 <th scope="col" className="py-3 px-6">
-                                    #
+                                    No
                                 </th>
                                 <th scope="col" className="py-3 px-6">
                                     Product name
@@ -89,7 +92,7 @@ const ProductList = () => {
                                     <td
                                         colSpan="4"
                                         className="py-4 px-6 text-center">
-                                        Tidak Ada Data
+                                        There is no data yet
                                     </td>
                                 </tr>
                             )}
